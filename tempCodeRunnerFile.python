@@ -1,0 +1,2 @@
+teams = ["Barcelona", "Real Madrid", "Manchester United", "Liverpool"]
+print(team)
