@@ -9,7 +9,7 @@ books = [
     Book("Số Đỏ", False),
     Book("Nhà Giả Kim", True),
 ]
-
+# True: đã được mượn, False: Có sẵn
 
 def show_books(books):
     print("\n--- DANH SÁCH SÁCH ---")

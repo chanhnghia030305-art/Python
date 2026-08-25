@@ -27,6 +27,14 @@ def sum_prime_number(n):
         total += prime_number
         n = n // 10
     print(total)
+    
+    
+def reversed_number(n):
+    rev = 0
+    while n > 0:
+        rev = rev * 10 + (n % 10)
+        n = n // 10
+    print(rev)
         
 
 
@@ -34,3 +42,4 @@ def sum_prime_number(n):
 sum_even_digit(2246)
 sum_odd_digit(1111)
 sum_prime_number(357)
+reversed_number(123)
