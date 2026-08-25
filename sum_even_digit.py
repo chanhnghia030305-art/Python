@@ -95,7 +95,20 @@ def kt_so_6(n):
             return 1
         n = n // 10
     return 0  
-print(kt_so_6(10))
+
+
+def n_chia_het_cho_8(n):
+    n = abs(n)
+    check = 0
+    while n > 0:
+        check += n % 10
+        n = n // 10
+    if check % 8 == 0:
+        return 1
+    return 0
+
+
+print(n_chia_het_cho_8(2042))
         
         
     
