@@ -95,10 +95,63 @@ def kt_so_6(n):
             return 1
         n = n // 10
     return 0  
-print(kt_so_6(10))
-        
-        
-    
+
+def Tong_so_chia_het_cho_8(n):
+    total = 0
+    while n > 0: 
+        check = n % 10
+        total += check
+        n = n // 10
+    if total % 8 == 0:
+        return 1
+    return 0
+
+
+def Tong_giai_thua_cac_chu_so(n):
+    total = 0
+    while n > 0:
+        check = n % 10
+        total += factorial(check)
+        n = n // 10
+    return total
+
+
+def ham_11(n):
+    check = 0
+    check1 = n % 10
+    while n > 0:
+        check = n % 10
+        if check != check1:
+            return 0
+        n = n // 10
+    return 1
+
+
+def ham_12(n):
+    check = 0
+    check1 = n % 10
+    while n > 0:
+        check = n % 10
+        if check > check1:
+            return 0
+        n = n // 10
+    return 1
+
+
+def ham_13(n):
+    so_mu = 0
+    total = 0
+    temp = n  # Store the original value of n to use in the second loop
+    while temp > 0:
+        so_mu += 1
+        temp = temp // 10
+    while n > 0:
+        total += pow(n % 10, so_mu)
+        n = n // 10
+    return total
+
+
+print(ham_13(12222))
 
 
 
